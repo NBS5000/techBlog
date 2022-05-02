@@ -3,3 +3,6 @@ DROP DATABASE IF EXISTS techBlog_db;
 
 -- CREATE DATABASE
 CREATE DATABASE techBlog_db;
+
+-- USE DATABASE
+USE techBlog_db;

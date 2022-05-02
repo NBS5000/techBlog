@@ -1,36 +1,32 @@
-const sequelize = require('../config/connection');
+const User = require("./sser");
+const Post = require("./post");
+const Comment = require("./comment");
 
-// import models
-const Product = require('./Product');
-const Category = require('./Category');
-const Tag = require('./Tag');
-const ProductTag = require('./ProductTag');
+User.hasMany(Post, {
+  foreignKey: "user_id",
+});
+Post.belongsTo(User, {
+  foreignKey: "user_id",
+  onDelete: "cascade",
+});
 
+Comment.belongsTo(User, {
+  foreignKey: "user_id",
+  onDelete: "cascade",
+});
 
-// Categories have many Products
-Category.hasMany(Product,{
-  foreignKey: "category_id",
-  // onDelete: "SET NULL",
-})
-// Products belongsTo Category
-Product.belongsTo(Category,{
-  foreignKey: "category_id",
-})
+Comment.belongsTo(Post, {
+  foreignKey: "post_id",
+  onDelete: "cascade",
+});
 
-// Products belongToMany Tags (through ProductTag)
-Product.belongsToMany(Tag, {
-  through: ProductTag 
-})
+User.hasMany(Comment, {
+  foreignKey: "user_id",
+  onDelete: "cascade",
+});
 
-// Tags belongToMany Products (through ProductTag)
-Tag.belongsToMany(Product, {
-  through: ProductTag ,
-})
-// sequelize.sync({ force: true });
-
-module.exports = {
-  Product,
-  Category,
-  Tag,
-  ProductTag,
-};
+Post.hasMany(Comment, {
+  foreignKey: "post_id",
+  onDelete: "cascade",
+});
+module.exports = { User, Post, Comment };

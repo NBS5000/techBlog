@@ -12,13 +12,13 @@ The provided user story was:
 
 > <span style="font-style:italic">AS A developer who writes about tech</span>
 > 
-> <span style="font-style:italic">I WANT a CMS-style blog site</span
+> <span style="font-style:italic">I WANT a CMS-style blog site</span>
 >
 > <span style="font-style:italic">SO THAT I can publish articles, blog posts, and my thoughts and opinions</span>
 
 **TASK**
 
-Provide a solution that 
+Provide a solution that allows a user to post blogs, be able to update and delete them, and allow other logged in users to comment on them. There should also be a time out feature.
 
 **ACTION**
 
@@ -39,6 +39,10 @@ Writing of a solution to resolve the situation, including:
 * GIT
   * *Numerous commits to track changes in code*
   * *Code deployed to Github and Heroku for public viewing*
+* FUNCTIONALITY
+  * *Time out feature*
+  * *Create, update, view, and delete posts*
+  * *Comment feature*
 
 **RESULT**
 
@@ -88,7 +92,7 @@ You can view the finished solution [HERE](https://nbs-techblog.herokuapp.com/)
 
 Alternatively, here is a screenshot:
 
-> ![Screenshot of Quiz Time page](./assets/images/screen.png "Screenshot of Quiz Time page")
+> ![Screenshot of Quiz Time page](./public/images/screen.png "Screenshot of Quiz Time page")
 
 ---
 <p style="text-align:center;">Written by <span style="font-style:italic">Steve Barry</span> - Due date 23/12/2021</p>

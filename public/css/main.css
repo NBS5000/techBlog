@@ -132,8 +132,10 @@ header {
 .yourPosts{
     width: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 #dashBtn{
     width: 250px;
     margin: 0 auto;
+    text-align: center;
 }

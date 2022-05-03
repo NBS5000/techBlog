@@ -84,13 +84,7 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 As the acceptance criteria has been met and exceeded, the task is now complete. 
 
-> There is a new Google feature named FLoc that is generating the below error. This is not a result of the performance or design of the site.
-> 
-> ![Screenshot of Google FLoC error](./assets/images/floc.PNG "Screenshot of Google FLoC error")
-> 
-> [Google FLoC](https://techcrunch.com/2021/03/30/google-starts-trialling-its-floc-cookie-alternative-in-chrome/)
-
-You can view the finished product [HERE](https://nbs5000.github.io/quizTime/)
+You can view the finished solution [HERE](https://nbs-techblog.herokuapp.com/)
 
 Alternatively, here is a screenshot:
 
